@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    // File Layout
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    // Environment Settings
+    "target": "ES2020",              // modern Node target
+    "module": "NodeNext",            // important for ESM in Node
+    "moduleResolution": "NodeNext",  // matches module setting
+    "lib": ["ES2020"],               // standard libs
+    "types": ["node"],               // includes @types/node
+
+    // Other Outputs
+    "sourceMap": true,
+    "declaration": true,
+
+    // Type Checking
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Interop with CommonJS packages
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
