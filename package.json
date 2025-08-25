@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "dev": "node --loader ts-node/esm src/index.ts",
     "test": "testing"
   },
   "author": "",
